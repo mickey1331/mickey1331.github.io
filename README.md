@@ -11,7 +11,7 @@
 | `_data/navigation.yml` | 顶部导航栏条目 |
 | `_data/cv.json` | `cv-json` 页面使用的简历数据 |
 | `_pages/` | 单页：首页 `about.md`、简历 `cv.md`、`publications.html`、`talks.html`、`teaching.html`、`portfolio.html`、`markdown.md`（语法说明）等 |
-| `_publications/` | 论文，一个文件一条（已有 NeurIPS 2026 的 SpecBridge，作者列表待补） |
+| `_publications/` | 论文，一个文件一条（已有 NeurIPS 2026 的 SpecBridge，第一作者 Wenjie Zhang，完整署名待补） |
 | `_talks/` | 报告，一个文件一条 |
 | `_teaching/` | 教学经历，一个文件一条 |
 | `_portfolio/` | 作品集条目，一个文件一条 |

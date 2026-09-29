@@ -38,10 +38,9 @@ Advisors
 
 Research experience
 ======
-* 2026 年至今：SpecBridge —— 面向形式规约合成任务的自然语言形式化计划学习
+* 2026 年至今：SpecBridge —— 面向形式规约合成任务的自然语言形式化计划学习（合作作者，第一作者 Wenjie Zhang）
   * 上海交通大学，导师：林云、胡振江
   * 成果：论文 SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task 被 NeurIPS 2026 接收
-  <!-- TODO: 可补充你具体负责的部分（数据构造、方法设计、实验与评测、验证器对接等） -->
 
 Projects
 ======
@@ -78,7 +77,7 @@ Teaching
   
 Awards and honors
 ======
-* NeurIPS 2026 论文接收：SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task
+* NeurIPS 2026 论文接收（合作作者）：SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task
   <!-- TODO: 奖学金、竞赛奖项等可继续补充；没有则把这条 TODO 注释删掉 -->
 
 Service and leadership

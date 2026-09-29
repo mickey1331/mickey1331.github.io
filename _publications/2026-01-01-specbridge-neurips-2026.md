@@ -6,12 +6,12 @@ permalink: /publication/specbridge-neurips-2026
 excerpt: '提出 SpecBridge：学习自然语言到形式化语言的形式化计划（formalization plan），用于形式规约合成任务。被 NeurIPS 2026 接收。'
 date: 2026-01-01
 venue: 'NeurIPS 2026'
-citation: 'TODO 作者列表. &quot;SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task.&quot; <i>NeurIPS 2026</i>.'
+citation: 'Wenjie Zhang et al. &quot;SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task.&quot; <i>NeurIPS 2026</i>.'
 ---
 
 <!-- 说明（发布前可整段删除）：
-     * citation 里的作者列表需要按论文最终署名顺序补齐，并把本句里的 "TODO 作者列表" 替换掉。
-       邮件显示 Wenjie Zhang 已将本人设为 presenting author（报告站点），但作者顺序我无法从邮件确认。
+     * 已知 Wenjie Zhang 为第一作者，吴美琪为合作作者（署名在后）；citation 暂用
+       “Wenjie Zhang et al.” 表示，拿到完整署名后替换为完整作者列表。
      * 如果之后有 arXiv、OpenReview 公开页面或代码仓库，可在 front matter 里补：
        paperurl: '…'   # 页面会显示 “Download Paper”
        link: '…'       # 标题会直接指向该链接
@@ -25,10 +25,10 @@ SpecBridge 研究形式规约合成（formal specification synthesis）任务：
 
 * 会议：NeurIPS 2026（Conference on Neural Information Processing Systems），已接收
 * 投稿系统：OpenReview（投稿编号 #20778）
-* 本人身份：作者（OpenReview 账号 mickey1331@sjtu.edu.cn）；报告站点上的 presenting author 为 Wenjie Zhang
+* 作者署名：第一作者 Wenjie Zhang，吴美琪为合作作者（署名顺序在 Wenjie Zhang 之后）
 
 <!-- TODO: 建议补充
-     * 完整作者列表与署名顺序
+     * 完整作者列表与署名顺序（用于替换 citation 里的 “et al.”）
      * 论文一句话贡献 / 方法要点（例如 plan 的表示形式、如何与验证器对接）
-     * 代码或数据开源链接
-     * 会议举办地、报告形式（poster / spotlight / oral） -->
+     * 会议举办地、报告形式（poster / spotlight / oral）
+     * 代码或数据开源链接 -->
