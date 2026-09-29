@@ -6,6 +6,7 @@ on:
       - 'talks/**'
       - '_talks/**'
       - 'talkmap.ipynb'
+  workflow_dispatch:        # 也可在 Actions 页面手动运行
 
 jobs:
   build:
@@ -14,26 +15,39 @@ jobs:
       contents: write           # This workflow pushes to the repository
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.9'   # Specify the Python version you need
+        python-version: '3.11'   # python-frontmatter 1.2+ 需要 Python 3.10 及以上
+
+    - name: Check for talks
+      id: talks
+      run: |
+        if ls _talks/*.md >/dev/null 2>&1; then
+          echo "found=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "found=false" >> "$GITHUB_OUTPUT"
+          echo "_talks/ 目录下没有 .md 文件，跳过地图生成。"
+        fi
 
     - name: Install dependencies
+      if: steps.talks.outputs.found == 'true'
       run: |
-        pip install jupyter pandas requests beautifulsoup4 geopy  # Add other dependencies as needed
-        pip install getorg --upgrade
+        # 固定大版本，避免上游发布不兼容版本时构建突然失败
+        pip install "jupyter" "nbconvert" "nbclient" "pandas" "requests" "beautifulsoup4" "geopy" "getorg" "python-frontmatter<2"
 
     - name: Run Jupyter Notebook
+      if: steps.talks.outputs.found == 'true'
       run: |
         jupyter nbconvert --to notebook --execute talkmap.ipynb --output talkmap_out.ipynb
 
     - name: Commit changes
+      if: steps.talks.outputs.found == 'true'
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add .
+        git add talkmap/ talkmap_out.ipynb
         git commit -m "Automated update of talk locations" || echo "No changes to commit"
         git push
