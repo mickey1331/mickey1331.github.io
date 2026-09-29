@@ -22,22 +22,26 @@ Contact
 
 Education
 ======
-* 上海交通大学，计算机专业，本科在读（大二）
+* 上海交通大学，计算机专业（永强班），本科在读（大二）
   <!-- TODO: 补上入学年份，例如：2024 年入学，预计 2028 年毕业 -->
 
 Research interests
 ======
 * 自然语言需求描述 → 形式化规约 → 可证明正确的程序代码生成（NL2Spec）
-  <!-- TODO: 可继续补充更细的方向，例如程序合成、形式化验证、代码大模型等 -->
+* 形式规约合成（formal specification synthesis）、程序合成与形式化验证
+  <!-- TODO: 可继续补充更细的方向，例如代码大模型、交互式定理证明等 -->
+
+Advisors
+======
+* 林云（上海交通大学）
+* 胡振江（上海交通大学）
 
 Research experience
 ======
-  <!-- TODO: 有科研/项目经历就按下面格式补上，没有可以先删掉这一节
-* 2025 年 X 月至今：NL2Spec 相关研究
-  * 上海交通大学某实验室 / 课题组
-  * 负责内容：……
-  * 指导老师：……
-  -->
+* 2026 年至今：SpecBridge —— 面向形式规约合成任务的自然语言形式化计划学习
+  * 上海交通大学，导师：林云、胡振江
+  * 成果：论文 SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task 被 NeurIPS 2026 接收
+  <!-- TODO: 可补充你具体负责的部分（数据构造、方法设计、实验与评测、验证器对接等） -->
 
 Projects
 ======
@@ -74,7 +78,8 @@ Teaching
   
 Awards and honors
 ======
-  <!-- TODO: 奖学金、竞赛奖项等；没有可整段删除 -->
+* NeurIPS 2026 论文接收：SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task
+  <!-- TODO: 奖学金、竞赛奖项等可继续补充；没有则把这条 TODO 注释删掉 -->
 
 Service and leadership
 ======

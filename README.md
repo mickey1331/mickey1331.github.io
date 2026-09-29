@@ -1,6 +1,6 @@
 # 吴美琪的个人主页（mickey1331.github.io）
 
-上海交通大学计算机专业大二学生（研究方向：根据自然语言需求描述生成可证明正确的程序代码，NL2Spec）的个人网站源码，基于 [Academic Pages](https://academicpages.github.io/) 模板（上游为 [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) 主题）。
+上海交通大学计算机专业（永强班）大二学生（导师：林云、胡振江；研究方向：根据自然语言需求描述生成可证明正确的程序代码，NL2Spec；论文 SpecBridge 被 NeurIPS 2026 接收）的个人网站源码，基于 [Academic Pages](https://academicpages.github.io/) 模板（上游为 [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) 主题）。
 模板自带的示例内容（示例文章、论文、报告、教学、作品集、示例图片与说明文档）已全部清理，仓库现在是空站点骨架。
 
 ## 目录结构
@@ -11,7 +11,7 @@
 | `_data/navigation.yml` | 顶部导航栏条目 |
 | `_data/cv.json` | `cv-json` 页面使用的简历数据 |
 | `_pages/` | 单页：首页 `about.md`、简历 `cv.md`、`publications.html`、`talks.html`、`teaching.html`、`portfolio.html`、`markdown.md`（语法说明）等 |
-| `_publications/` | 论文，一个文件一条 |
+| `_publications/` | 论文，一个文件一条（已有 NeurIPS 2026 的 SpecBridge，作者列表待补） |
 | `_talks/` | 报告，一个文件一条 |
 | `_teaching/` | 教学经历，一个文件一条 |
 | `_portfolio/` | 作品集条目，一个文件一条 |

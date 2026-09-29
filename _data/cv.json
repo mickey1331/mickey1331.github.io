@@ -4,7 +4,7 @@
     "email": "mickey1331@sjtu.edu.cn",
     "phone": "",
     "website": "https://mickey1331.github.io",
-    "summary": "上海交通大学计算机专业大二学生，研究方向为自然语言需求描述到可证明正确程序代码的生成（NL2Spec）。",
+    "summary": "上海交通大学计算机专业（永强班）大二学生，研究方向为自然语言需求描述到可证明正确程序代码的生成（NL2Spec）。论文 SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task 被 NeurIPS 2026 接收。",
     "location": {
       "address": "",
       "postalCode": "",
@@ -24,7 +24,7 @@
   "education": [
     {
       "institution": "上海交通大学",
-      "area": "计算机专业",
+      "area": "计算机专业（永强班）",
       "studyType": "本科在读（大二）",
       "startDate": "",
       "endDate": "",
@@ -41,7 +41,15 @@
     }
   ],
   "references": [],
-  "publications": [],
+  "publications": [
+    {
+      "name": "SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task",
+      "publisher": "NeurIPS 2026 (Conference on Neural Information Processing Systems)",
+      "releaseDate": "2026-01-01",
+      "website": "",
+      "summary": "提出 SpecBridge，学习自然语言形式化计划，用于形式规约合成任务。"
+    }
+  ],
   "presentations": [],
   "teaching": [],
   "portfolio": []

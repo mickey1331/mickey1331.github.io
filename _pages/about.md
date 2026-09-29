@@ -7,20 +7,19 @@ redirect_from:
   - /about.html
 ---
 
-我是吴美琪，上海交通大学计算机专业大二学生，研究方向是**根据自然语言需求描述生成可证明正确的程序代码（NL2Spec）**。
+我是吴美琪，上海交通大学计算机专业（永强班）大二学生，研究方向是**根据自然语言需求描述生成可证明正确的程序代码（NL2Spec）**，导师为林云老师与胡振江老师。
 
 联系方式：[mickey1331@sjtu.edu.cn](mailto:mickey1331@sjtu.edu.cn) ｜ 备用：[3197959894@qq.com](mailto:3197959894@qq.com)
 
-<!-- TODO: 上面这段可以随意改写或继续扩写（比如具体课题、导师/实验室、用到的工具如 Coq/Lean/Dafny、感兴趣的子问题）。写完这句注释可以整段删除。
+论文 **SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task** 被 **NeurIPS 2026** 接收，详见 [Publications](/publications/) 页面。
 
-常用写法：
+<!-- TODO: 这一段可以继续扩写（例如年级、课程背景、感兴趣的子问题、为什么做这个方向）。
+
+常用写法参考：
 * 无序列表项；**加粗**、*斜体*、[链接文字](https://example.com)
 * 插入图片：感叹号 + 方括号说明文字 + 圆括号图片路径，例如 images/profile.png 的写法为
   ![说明文字](images/profile.png)
-
-正文里可以直接使用的特殊代码块（开头的三反引号后写语言名）：
-* mermaid —— 流程图
-* plotly —— 交互式图表
+* 特殊代码块（开头的三反引号后写语言名）：mermaid 流程图、plotly 交互式图表
 * 数学公式直接写 \( ... \) 或 $$ ... $$，不需要代码块
 
 更多排版示例见顶部导航栏的 Markdown 页面。
@@ -29,8 +28,13 @@ redirect_from:
 ## 研究方向
 
 NL2Spec：把自然语言形式的需求描述翻译成形式化规约，并进一步生成可证明正确（verified）的程序代码。
-<!-- TODO: 这一段建议补上你具体在做什么，例如：
-* 形式化规约的目标语言（Coq / Lean 4 / Dafny / TLA+ / Alloy …）
-* 目前使用的数据集或评测基准、baseline 方法
-* 你负责的部分（数据构造、prompt/微调、验证器对接、评测 …）
--->
+
+其中一项工作 SpecBridge 关注**形式规约合成（formal specification synthesis）**：学习自然语言中的“形式化计划”（formalization plan），以此指导形式规约的生成，让下游的形式化验证成为可能。
+
+<!-- TODO: 可补充细节，例如形式规约的目标语言（Coq / Lean 4 / Dafny / TLA+ / Alloy …）、数据集与评测基准、baseline 方法。 -->
+
+## 科研经历
+
+* **SpecBridge**（2026 年至今）—— 面向形式规约合成任务的自然语言形式化计划学习；导师：林云、胡振江；成果被 NeurIPS 2026 接收
+
+<!-- TODO: 可补充你具体负责的部分（数据构造、方法设计、实验与评测、验证器对接等）。 -->
