@@ -37,6 +37,16 @@
    打开 http://localhost:4000 查看。（也可用仓库自带的 `Dockerfile` / DevContainer：`docker compose up`。）
 5. 推送到 `master` 分支后，GitHub Pages 会自动构建并发布。
 
+## 中英双语
+
+站点同时提供中文版（根路径）与英文版（`/en/`），右上角有语言切换按钮（`中/EN` 图标），点击即跳转到对应语言的同一页面。
+
+* 每张页面用 front matter 声明语言：`lang: zh` 或 `lang: en`，并用 `lang_url` 指向另一语言的同一页面（切换按钮靠它跳转）；**新增页面时两者都要写**，否则该页不显示切换按钮。
+* 站点标题、副标题、描述、侧边栏姓名与简介、页脚文案按 `lang` 从 `_data/language.yml` 读取；英文界面文案在 `_data/ui-text-en.yml`，中文沿用主题自带的 `_data/ui-text.yml`。
+* 导航栏同样是双语：`_data/navigation.yml` 里的 `main`（中文）与 `main_en`（英文）。
+* 论文按语言分开：中文条目放 `_publications/`，英文条目放 `_publications/en/`，两者的 front matter 都要写 `lang` 字段，列表页与 CV 页会自动按语言过滤。
+* 首页还会输出 `hreflang` 标签（`<link rel="alternate">`），方便搜索引擎区分中英文版本。
+
 ## 说明
 
 * 该站点由 Jekyll 构建，内容与主题分离：正文是 Markdown，样式在 `_sass/`、`assets/`、`_includes/`、`_layouts/` 中。

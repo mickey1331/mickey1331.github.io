@@ -2,6 +2,8 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
+lang: zh
+lang_url: /en/publications/
 author_profile: true
 ---
 
@@ -11,12 +13,16 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+<!-- New style rendering if publication categories are defined (按页面语言过滤) -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% assign post_lang = post.lang | default: 'zh' %}
+      {% if post_lang != page.lang %}
         {% continue %}
       {% endif %}
       {% unless title_shown %}
@@ -28,6 +34,10 @@ author_profile: true
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
+    {% assign post_lang = post.lang | default: 'zh' %}
+    {% if post_lang != page.lang %}
+      {% continue %}
+    {% endif %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}

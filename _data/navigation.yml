@@ -1,13 +1,11 @@
-# The following is the order of the links in the header of the website.
+# 顶部导航栏条目（中英双语）
 #
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
+# 每张页面通过 front matter 的 lang 字段选择语言：
+#   lang: zh（默认）读取 main
+#   lang: en        读取 main_en
+# 增删条目即可调整对应语言导航栏的显示内容与顺序。
 #
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-#
-# 当前按个人情况只保留四个选项卡：论文、科研、竞赛与荣誉、简历。
+# 目前每个语言保留四个选项卡：Publications / Research / Awards / CV。
 # Talks / Teaching / Portfolio / Blog Posts 的页面已移到 _drafts/（不参与构建），
 # 以后有内容时把文件移回 _pages/ 并在此处加回对应条目即可。
 
@@ -26,3 +24,16 @@ main:
 
   # - title: "CV"
   #   url: /cv-json/
+
+main_en:
+  - title: "Publications"
+    url: /en/publications/
+
+  - title: "Research"
+    url: /en/research/
+
+  - title: "Awards"
+    url: /en/awards/
+
+  - title: "CV"
+    url: /en/cv/

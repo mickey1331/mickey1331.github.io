@@ -2,6 +2,8 @@
 layout: archive
 title: "Research"
 permalink: /research/
+lang: zh
+lang_url: /en/research/
 author_profile: true
 ---
 

@@ -2,6 +2,8 @@
 layout: archive
 title: "CV"
 permalink: /cv/
+lang: zh
+lang_url: /en/cv/
 author_profile: true
 redirect_from:
   - /resume
@@ -46,6 +48,8 @@ Skills
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
+    {% assign post_lang = post.lang | default: 'zh' %}
+    {% if post_lang != page.lang %}{% continue %}{% endif %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 

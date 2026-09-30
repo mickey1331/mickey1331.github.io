@@ -1,6 +1,8 @@
 ---
 permalink: /
 title: "吴美琪 (Meiqi Wu)"
+lang: zh
+lang_url: /en/
 author_profile: true
 redirect_from: 
   - /about/

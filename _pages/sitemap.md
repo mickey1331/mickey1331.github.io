@@ -2,6 +2,8 @@
 layout: archive
 title: "Sitemap"
 permalink: /sitemap/
+lang: zh
+lang_url: /en/sitemap/
 author_profile: true
 ---
 

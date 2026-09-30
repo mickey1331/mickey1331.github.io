@@ -2,6 +2,8 @@
 layout: archive
 title: "Awards"
 permalink: /awards/
+lang: zh
+lang_url: /en/awards/
 author_profile: true
 ---
 

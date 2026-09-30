@@ -3,6 +3,7 @@ title: "SpecBridge: Learning Natural-Language Formalization Plans for the Formal
 collection: publications
 category: conferences
 permalink: /publication/specbridge-neurips-2026
+lang: zh
 excerpt: '提出 SpecBridge：学习自然语言到形式化语言的形式化计划（formalization plan），用于形式规约合成任务。被 NeurIPS 2026 接收。'
 date: 2026-01-01
 venue: 'NeurIPS 2026'
