@@ -1,9 +1,8 @@
 # 顶部导航栏条目（中英双语）
 #
-# 英文是默认语言，页面在根路径；中文页面在 /zh/ 下。
-# 每张页面通过 front matter 的 lang 字段选择导航：
-#   lang: en（默认）读取 main
-#   lang: zh          读取 main_zh
+# 每张页面通过 front matter 的 lang 字段选择语言：
+#   lang: zh（默认）读取 main
+#   lang: en        读取 main_en
 # 增删条目即可调整对应语言导航栏的显示内容与顺序。
 #
 # 目前每个语言保留四个选项卡：Publications / Research / Awards / CV。
@@ -26,15 +25,15 @@ main:
   # - title: "CV"
   #   url: /cv-json/
 
-main_zh:
+main_en:
   - title: "Publications"
-    url: /zh/publications/
+    url: /en/publications/
 
   - title: "Research"
-    url: /zh/research/
+    url: /en/research/
 
   - title: "Awards"
-    url: /zh/awards/
+    url: /en/awards/
 
   - title: "CV"
-    url: /zh/cv/
+    url: /en/cv/

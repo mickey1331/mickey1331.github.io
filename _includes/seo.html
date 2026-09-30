@@ -1,7 +1,7 @@
 {% include base_path %}
 
 {% comment %}语言相关变量：中文版默认，英文版由页面 lang: en 触发{% endcomment %}
-{% assign page_lang = page.lang | default: 'en' %}
+{% assign page_lang = page.lang | default: 'zh' %}
 {% assign language = site.data.language[page_lang] %}
 {% assign site_title = language.title | default: site.title %}
 {% assign site_subtitle = language.subtitle | default: site.title %}

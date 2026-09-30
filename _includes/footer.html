@@ -1,7 +1,7 @@
 {% include base_path %}
 
 {% comment %}按页面语言选择界面文案{% endcomment %}
-{% assign page_lang = page.lang | default: 'en' %}
+{% assign page_lang = page.lang | default: 'zh' %}
 {% assign language = site.data.language[page_lang] %}
 {% assign ui = site.data.ui-text-en[language.locale] %}
 {% assign ui_fallback = site.data.ui-text[site.locale] %}

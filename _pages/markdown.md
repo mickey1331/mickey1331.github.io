@@ -1,11 +1,8 @@
 ---
-permalink: /zh/markdown/
-lang: zh
-lang_url: /
+permalink: /markdown/
 title: "Markdown"
 author_profile: true
-redirect_from:
-  - /markdown/
+redirect_from: 
   - /md/
   - /markdown.html
 ---

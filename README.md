@@ -7,16 +7,12 @@
 
 | 路径 | 用途 |
 | --- | --- |
-| `_config.yml` | 站点与作者信息（标题、姓名、头像、邮箱、各类主页链接、社交账号；英文为默认） |
-| `_data/language.yml` | 中英双语文案（站点标题/描述、侧边栏姓名与简介、切换按钮文字） |
-| `_data/navigation.yml` | 顶部导航栏条目：`main`（英文，四个选项卡）与 `main_zh`（中文） |
-| `_data/ui-text-en.yml` | 英文界面文案（中文用主题自带的 `_data/ui-text.yml`） |
-| `_data/cv.json` | `cv-json` 页面使用的简历数据（该页默认不显示在导航，可访问 `/zh/cv-json/`） |
-| `_pages/` | **英文页面（默认语言）**：首页 `about.md`、简历 `cv.md`、科研 `research.md`、竞赛与荣誉 `awards.md`、论文列表 `publications.html`、`sitemap.md`、`404.md` |
-| `_pages/zh/` | **中文页面**：同名的 `about.md`、`cv.md`、`research.md`、`awards.md`、`publications.html` 等，以及 `markdown.md`（语法说明）、`terms.md` 等辅助页 |
+| `_config.yml` | 站点与作者信息（标题、姓名、头像、邮箱、各类主页链接、社交账号） |
+| `_data/navigation.yml` | 顶部导航栏条目（当前四个选项卡：Publications / Research / Awards / CV） |
+| `_data/cv.json` | `cv-json` 页面使用的简历数据（该页默认不显示在导航，可访问 `/cv-json/`） |
+| `_pages/` | 单页：首页 `about.md`、简历 `cv.md`、科研 `research.md`、竞赛与荣誉 `awards.md`、论文列表 `publications.html`、`markdown.md`（语法说明）、`sitemap.md` 等 |
 | `_drafts/` | 暂不发布的页面（`talks.html`、`teaching.html`、`portfolio.html`、`year-archive.html`、`talkmap.html`），放回 `_pages/` 并在 `_data/navigation.yml` 加回条目即可启用 |
-| `_publications/` | 论文（英文条目），一个文件一条（已有 NeurIPS 2026 的 SpecBridge，第一作者 Wenjie Zhang，完整署名待补） |
-| `_publications/zh/` | 论文的中文条目 |
+| `_publications/` | 论文，一个文件一条（已有 NeurIPS 2026 的 SpecBridge，第一作者 Wenjie Zhang，完整署名待补） |
 | `_talks/` | 报告，一个文件一条（当前为空） |
 | `_teaching/` | 教学经历，一个文件一条（当前为空） |
 | `_portfolio/` | 作品集条目，一个文件一条（当前为空，对应页面在 `_drafts/`） |
@@ -43,14 +39,13 @@
 
 ## 中英双语
 
-**英文是默认语言**，页面在根路径；**中文页面在 `/zh/` 下**。导航栏右上角有语言切换按钮（地球图标 + `中文` / `EN`），点击即跳到同一页面的另一语言版本。
+站点同时提供中文版（根路径）与英文版（`/en/`），右上角有语言切换按钮（`中/EN` 图标），点击即跳转到对应语言的同一页面。
 
-* 每张页面用 front matter 声明语言：`lang: en`（默认，可省略）或 `lang: zh`，并用 `lang_url` 指向另一语言的同一页面（切换按钮靠它跳转）；**新增页面时两者都要写**，否则该页不显示切换按钮。
-* 站点标题、副标题、描述、侧边栏姓名与简介、页脚文案按 `lang` 从 `_data/language.yml` 读取（`_config.yml` 里的 `title`/`description` 是英文兜底）；英文界面文案在 `_data/ui-text-en.yml`，中文沿用主题自带的 `_data/ui-text.yml`。
-* 导航栏同样是双语：`_data/navigation.yml` 里的 `main`（英文，根路径）与 `main_zh`（中文，`/zh/` 路径）。
-* 论文按语言分开：英文条目放 `_publications/`，中文条目放 `_publications/zh/`，两者的 front matter 都要写 `lang` 字段，列表页与 CV 页会自动按语言过滤。
-* 页面会输出 `hreflang` 标签（`<link rel="alternate">`，含 `x-default` 指向英文版），方便搜索引擎区分中英文版本。
-* 旧的 `/en/...` 地址通过 `redirect_from` 自动跳转到新的根路径，不会失效。
+* 每张页面用 front matter 声明语言：`lang: zh` 或 `lang: en`，并用 `lang_url` 指向另一语言的同一页面（切换按钮靠它跳转）；**新增页面时两者都要写**，否则该页不显示切换按钮。
+* 站点标题、副标题、描述、侧边栏姓名与简介、页脚文案按 `lang` 从 `_data/language.yml` 读取；英文界面文案在 `_data/ui-text-en.yml`，中文沿用主题自带的 `_data/ui-text.yml`。
+* 导航栏同样是双语：`_data/navigation.yml` 里的 `main`（中文）与 `main_en`（英文）。
+* 论文按语言分开：中文条目放 `_publications/`，英文条目放 `_publications/en/`，两者的 front matter 都要写 `lang` 字段，列表页与 CV 页会自动按语言过滤。
+* 首页还会输出 `hreflang` 标签（`<link rel="alternate">`），方便搜索引擎区分中英文版本。
 
 ## 说明
 
