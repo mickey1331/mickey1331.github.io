@@ -1,8 +1,11 @@
 ---
-permalink: /non-menu-page/
+permalink: /zh/non-menu-page/
+lang: zh
+lang_url: /
 title: "Page not in menu"
 author_profile: true
-redirect_from: 
+redirect_from:
+  - /non-menu-page/
   - "/nmp/"
   - "/nmp.html"
 ---

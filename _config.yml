@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "吴美琪 | 上海交通大学"
+title                    : "Meiqi Wu | Shanghai Jiao Tong University" # 英文为默认语言；中文标题见 _data/language.yml
 title_separator          : "-"
-name                     : &name "吴美琪"
-description              : &description "吴美琪（Meiqi Wu）的个人主页 —— 上海交通大学计算机专业（永强班）在读，研究方向为自然语言需求到形式化规约与可证明正确代码的生成（NL2Spec），NeurIPS 2026 论文 SpecBridge 作者"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Meiqi Wu"
+description              : &description "Homepage of Meiqi Wu — undergraduate in Computer Science at Shanghai Jiao Tong University (Yongqiang Class); research on natural-language-to-verified-code generation (NL2Spec); co-author of the NeurIPS 2026 paper SpecBridge."   # 中文描述见 _data/language.yml
 url                      : https://mickey1331.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"

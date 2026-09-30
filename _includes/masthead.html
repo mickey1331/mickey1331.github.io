@@ -1,12 +1,12 @@
 {% include base_path %}
 
 {% comment %}语言相关变量{% endcomment %}
-{% assign page_lang = page.lang | default: 'zh' %}
+{% assign page_lang = page.lang | default: 'en' %}
 {% assign language = site.data.language[page_lang] %}
 {% assign ui = site.data.ui-text-en[language.locale] %}
 {% assign site_title = language.title | default: site.title %}
 {% assign nav_key = 'main' %}
-{% if page_lang == 'en' %}{% assign nav_key = 'main_en' %}{% endif %}
+{% if page_lang == 'zh' %}{% assign nav_key = 'main_zh' %}{% endif %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -14,8 +14,8 @@
       <nav id="site-nav" class="greedy-nav">
         <button><span class="navicon"></span></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' or page.url == '/en/' %}selected{% endif %}">
-            <a href="{% if page_lang == 'en' %}{{ base_path }}/en/{% else %}{{ base_path }}/{% endif %}">{{ site_title }}</a>
+          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' or page.url == '/zh/' %}selected{% endif %}">
+            <a href="{% if page_lang == 'zh' %}{{ base_path }}/zh/{% else %}{{ base_path }}/{% endif %}">{{ site_title }}</a>
           </li>
           {% for link in site.data.navigation[nav_key] %}
             {% if link.url contains 'http' %}

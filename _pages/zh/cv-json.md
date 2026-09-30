@@ -1,9 +1,12 @@
 ---
 layout: archive
 title: "CV"
-permalink: /cv-json/
+permalink: /zh/cv-json/
+lang: zh
+lang_url: /
 author_profile: false
 redirect_from:
+  - /cv-json/
   - /resume-json
 ---
 
