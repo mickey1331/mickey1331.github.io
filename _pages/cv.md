@@ -52,6 +52,6 @@ Publications
 Awards and honors
 ======
 * NeurIPS 2026 论文接收（合作作者）：SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task
-* 美国大学生数学建模竞赛（MCM/ICM）参赛
+* 2026 年美国大学生数学建模竞赛（ICM）Honorable Mention（荣誉提名）
 * 智能体黑客松（Agent Hackathon）参赛
 * 欧莱雅美妆黑客松大赛参赛
