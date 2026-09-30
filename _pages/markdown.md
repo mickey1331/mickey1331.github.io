@@ -1,5 +1,7 @@
 ---
 permalink: /markdown/
+lang: zh
+lang_url: /en/
 title: "Markdown"
 author_profile: true
 redirect_from: 
