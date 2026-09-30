@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "吴美琪 (Meiqi Wu)"
   pronouns         : # example: "she/her"  
-  bio              : "上海交通大学计算机专业（永强班）大二学生，研究方向：自然语言需求 → 形式化规约 → 可证明正确的程序代码（NL2Spec）；NeurIPS 2026 论文 SpecBridge 作者"
+  bio              : "上海交通大学计算机专业（永强班）大二学生，研究方向：自然语言需求 → 形式化规约 → 可证明正确的程序代码（NL2Spec）；熟悉 C++ / Python，正在学习 Rust，证明语言用 Lean；NeurIPS 2026 论文 SpecBridge 合作作者"
   location         : "上海交通大学"
   employer         : "上海交通大学"
   uri              : # URL

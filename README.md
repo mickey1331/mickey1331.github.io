@@ -1,6 +1,6 @@
 # 吴美琪的个人主页（mickey1331.github.io）
 
-上海交通大学计算机专业（永强班）大二学生（导师：林云、胡振江；研究方向：根据自然语言需求描述生成可证明正确的程序代码，NL2Spec；论文 SpecBridge 被 NeurIPS 2026 接收）的个人网站源码，基于 [Academic Pages](https://academicpages.github.io/) 模板（上游为 [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) 主题）。
+上海交通大学计算机专业（永强班）大二学生（导师：林云（上海交通大学）、胡振江（北京大学）；研究方向：根据自然语言需求描述生成可证明正确的程序代码，NL2Spec；论文 SpecBridge 被 NeurIPS 2026 接收）的个人网站源码，基于 [Academic Pages](https://academicpages.github.io/) 模板（上游为 [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) 主题）。
 模板自带的示例内容（示例文章、论文、报告、教学、作品集、示例图片与说明文档）已全部清理，仓库现在是空站点骨架。
 
 ## 目录结构

@@ -34,13 +34,20 @@ Research interests
 Advisors
 ======
 * 林云（上海交通大学）
-* 胡振江（上海交通大学）
+* 胡振江（北京大学）
 
 Research experience
 ======
 * 2026 年至今：SpecBridge —— 面向形式规约合成任务的自然语言形式化计划学习（合作作者，第一作者 Wenjie Zhang）
   * 上海交通大学，导师：林云、胡振江
   * 成果：论文 SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task 被 NeurIPS 2026 接收
+* 进行中：与上海光源（SSRF）的合作项目
+
+Skills
+======
+* 编程语言：C++、Python；正在学习 Rust
+* 形式化方法 / 证明助手：Lean
+  <!-- TODO: 如熟悉构建与实验工具链可补充，例如 Git、Linux、LaTeX、PyTorch、Coq / Dafny 等 -->
 
 Projects
 ======
@@ -48,13 +55,6 @@ Projects
 * 项目名称（附 GitHub 链接）
   * 技术栈：……
   * 说明：……
-  -->
-
-Skills
-======
-  <!-- TODO: 例如
-* 编程语言：Python、C++、OCaml、Coq / Lean ……
-* 工具：Git、Linux、LaTeX、PyTorch ……
   -->
 
 Publications
@@ -78,7 +78,10 @@ Teaching
 Awards and honors
 ======
 * NeurIPS 2026 论文接收（合作作者）：SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task
-  <!-- TODO: 奖学金、竞赛奖项等可继续补充；没有则把这条 TODO 注释删掉 -->
+* 美国大学生数学建模竞赛（MCM/ICM）参赛
+* 智能体黑客松（Agent Hackathon）参赛
+* 欧莱雅美妆黑客松大赛参赛
+  <!-- TODO: 可补充各竞赛的年份与奖项名次；没有名次的可以只写参赛 -->
 
 Service and leadership
 ======

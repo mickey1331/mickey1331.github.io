@@ -4,7 +4,7 @@
     "email": "mickey1331@sjtu.edu.cn",
     "phone": "",
     "website": "https://mickey1331.github.io",
-    "summary": "上海交通大学计算机专业（永强班）大二学生，研究方向为自然语言需求描述到可证明正确程序代码的生成（NL2Spec）。论文 SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task 被 NeurIPS 2026 接收。",
+    "summary": "上海交通大学计算机专业（永强班）大二学生，研究方向为自然语言需求描述到可证明正确程序代码的生成（NL2Spec），导师为林云（上海交通大学）与胡振江（北京大学）。论文 SpecBridge: Learning Natural-Language Formalization Plans for the Formal Specification Synthesis Task 被 NeurIPS 2026 接收（合作作者）。",
     "location": {
       "address": "",
       "postalCode": "",
@@ -32,7 +32,16 @@
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "编程语言",
+      "keywords": ["C++", "Python", "Rust（正在学习）"]
+    },
+    {
+      "name": "形式化方法与证明助手",
+      "keywords": ["Lean"]
+    }
+  ],
   "languages": [],
   "interests": [
     {
@@ -47,10 +56,24 @@
       "publisher": "NeurIPS 2026 (Conference on Neural Information Processing Systems)",
       "releaseDate": "2026-01-01",
       "website": "",
-      "summary": "提出 SpecBridge，学习自然语言形式化计划，用于形式规约合成任务。"
+      "summary": "提出 SpecBridge，学习自然语言形式化计划，用于形式规约合成任务。第一作者 Wenjie Zhang，吴美琪为合作作者。"
     }
   ],
   "presentations": [],
   "teaching": [],
-  "portfolio": []
+  "portfolio": [],
+  "projects": [
+    {
+      "name": "SpecBridge —— 形式规约合成任务中的自然语言形式化计划学习",
+      "description": "合作作者（第一作者 Wenjie Zhang），论文被 NeurIPS 2026 接收；导师：林云（上海交通大学）、胡振江（北京大学）。",
+      "highlights": [],
+      "keywords": ["NL2Spec", "形式规约合成", "Lean"]
+    },
+    {
+      "name": "与上海光源（SSRF）的合作项目",
+      "description": "进行中。",
+      "highlights": [],
+      "keywords": []
+    }
+  ]
 }
