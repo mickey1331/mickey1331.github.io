@@ -8,14 +8,15 @@
 | 路径 | 用途 |
 | --- | --- |
 | `_config.yml` | 站点与作者信息（标题、姓名、头像、邮箱、各类主页链接、社交账号） |
-| `_data/navigation.yml` | 顶部导航栏条目 |
-| `_data/cv.json` | `cv-json` 页面使用的简历数据 |
-| `_pages/` | 单页：首页 `about.md`、简历 `cv.md`、`publications.html`、`talks.html`、`teaching.html`、`portfolio.html`、`markdown.md`（语法说明）等 |
+| `_data/navigation.yml` | 顶部导航栏条目（当前四个选项卡：Publications / Research / Awards / CV） |
+| `_data/cv.json` | `cv-json` 页面使用的简历数据（该页默认不显示在导航，可访问 `/cv-json/`） |
+| `_pages/` | 单页：首页 `about.md`、简历 `cv.md`、科研 `research.md`、竞赛与荣誉 `awards.md`、论文列表 `publications.html`、`markdown.md`（语法说明）、`sitemap.md` 等 |
+| `_drafts/` | 暂不发布的页面（`talks.html`、`teaching.html`、`portfolio.html`、`year-archive.html`、`talkmap.html`），放回 `_pages/` 并在 `_data/navigation.yml` 加回条目即可启用 |
 | `_publications/` | 论文，一个文件一条（已有 NeurIPS 2026 的 SpecBridge，第一作者 Wenjie Zhang，完整署名待补） |
-| `_talks/` | 报告，一个文件一条 |
-| `_teaching/` | 教学经历，一个文件一条 |
-| `_portfolio/` | 作品集条目，一个文件一条 |
-| `_posts/` | 博客文章，文件名为 `YYYY-MM-DD-标题.md` |
+| `_talks/` | 报告，一个文件一条（当前为空） |
+| `_teaching/` | 教学经历，一个文件一条（当前为空） |
+| `_portfolio/` | 作品集条目，一个文件一条（当前为空，对应页面在 `_drafts/`） |
+| `_posts/` | 博客文章，文件名为 `YYYY-MM-DD-标题.md`（当前为空，对应页面在 `_drafts/`） |
 | `images/` | 站点图片，头像为 `images/profile.png` |
 | `files/` | 静态文件（PDF、压缩包等），网址为 `https://mickey1331.github.io/files/文件名` |
 | `markdown_generator/` | 由 TSV/CSV 批量生成论文、报告 Markdown 的脚本与 notebook |
@@ -24,8 +25,8 @@
 ## 开始使用
 
 1. 编辑 `_config.yml`，把 `title`、`name`、`author` 下的链接（Google Scholar、ORCID 等）和 `url`、`repository` 换成你自己的信息。目前姓名（吴美琪 / Meiqi Wu）、学校（上海交通大学）、专业（计算机/大二）、研究方向（NL2Spec）、邮箱（mickey1331@sjtu.edu.cn）等已填好，其余留空项按需补充。
-2. 修改 `_data/navigation.yml`，保留需要的导航项（不需要的整段删除或注释）。默认的 CV 页面是 Markdown 版 `cv.md`，`cv-json` 版本默认隐藏。
-3. 按上面的目录结构往 `_publications/`、`_talks/` 等目录里添加内容，格式可参考 `_pages/markdown.md` 与各集合的 `defaults` 配置。
+2. `_data/navigation.yml` 里目前是四个选项卡：Publications（论文）、Research（科研）、Awards（竞赛与荣誉）、CV（简历）；增删条目即可调整导航栏。CV 默认用 Markdown 版 `cv.md`，JSON 版 `/cv-json/` 默认不显示在导航里。
+3. 按上面的目录结构往 `_publications/` 等目录里添加内容，格式可参考 `_pages/markdown.md` 与各集合的 `defaults` 配置。
 4. 本地预览：
 
    ```bash
@@ -34,7 +35,7 @@
    ```
 
    打开 http://localhost:4000 查看。（也可用仓库自带的 `Dockerfile` / DevContainer：`docker compose up`。）
-5. 推送到 GitHub 的 `main` 分支后，GitHub Pages 会自动构建并发布。
+5. 推送到 `master` 分支后，GitHub Pages 会自动构建并发布。
 
 ## 说明
 

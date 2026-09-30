@@ -6,25 +6,23 @@
 #
 # NOTE that only one of the CV options should be selected, the first is for the
 #      Markdown formatted page while the second is generated using JSON.
+#
+# 当前按个人情况只保留四个选项卡：论文、科研、竞赛与荣誉、简历。
+# Talks / Teaching / Portfolio / Blog Posts 的页面已移到 _drafts/（不参与构建），
+# 以后有内容时把文件移回 _pages/ 并在此处加回对应条目即可。
 
 main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Research"
+    url: /research/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
+  - title: "Awards"
+    url: /awards/
+
   - title: "CV"
     url: /cv/
-    
+
   # - title: "CV"
   #   url: /cv-json/
